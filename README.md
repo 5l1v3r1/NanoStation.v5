@@ -21,7 +21,7 @@ You will now see traffic flooding in tcp screen, browse to
 Below is some screenshots: 
 
 ### MainScreen
-![screenshot](mainscreen.png)
+![screenshot](main_screen.png)
 
 ### Wireless
 ![screenshot](wireless.png)
@@ -82,7 +82,7 @@ Cloud is for those who have 10 or more devices, however, here is some screenshot
 ![screenshot](cloud_shell.gif)
 
 ### Stats is also included of course.
-![screenshot](stats_ubnt.gif)
+![screenshot](ubnt_stats.gif)
 
 #### Application for android
 Android App: https://play.google.com/store/apps/details?id=com.ubnt.umobile
