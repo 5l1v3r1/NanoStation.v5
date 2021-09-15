@@ -26,8 +26,8 @@ Below is some screenshots:
 ### Wireless
 ![screenshot](wireless.png)
 
-### Wireless Ap-Reapeatr
-![screenshot](wireless-repeater.png)
+### Wireless AP-Repeater
+![screenshot](wireless_ap_repeater.png)
 
 
 
