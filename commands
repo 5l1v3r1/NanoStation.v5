@@ -1,0 +1,564 @@
+u 4954 wuseman   1100 S    /bin/dropbear -F -r /etc/persistent/dropbear_dss_host_key -r /etc/persistent/dropbear_rsa_host_key -p 22
+ 4959 wuseman   4204 S    /bin/lighttpd -D -f /etc/lighttpd.conf
+ 5078 wuseman   1164 S    /bin/dropbear -F -r /etc/persistent/dropbear_dss_host_key -r /etc/persistent/dropbear_rsa_host_key -p 22
+ 5079 wuseman   1452 S    -sh
+ 5105 wuseman      0 Z    [unms_status.cgi]
+ 5106 wuseman   1436 R    ps
+XW.v6.3.5# ps
+  PID USER       VSZ STAT COMMAND
+    1 wuseman   1448 S    init
+    2 wuseman      0 SW   [kthreadd]
+    3 wuseman      0 SW   [ksoftirqd/0]
+    4 wuseman      0 SW   [events/0]
+    5 wuseman      0 SW   [khelper]
+    8 wuseman      0 SW   [async/mgr]
+   42 wuseman      0 SW   [sync_supers]
+   44 wuseman      0 SW   [bdi-default]
+   46 wuseman      0 SW   [kblockd/0]
+   66 wuseman      0 SW   [kswapd0]
+   67 wuseman      0 SW   [aio/0]
+   68 wuseman      0 SW   [crypto/0]
+  150 wuseman      0 SW   [mtdblockd]
+  255 wuseman   1440 S    /bin/watchdog -t 1 /dev/watchdog
+  396 wuseman    736 S    /sbin/hotplug2 --persistent --set-rules-file /usr/etc/hotplug2.rules
+  882 wuseman   3592 S    /bin/udapi-bridge -w -g -k -p 61780
+  891 wuseman   1940 S    /bin/udapi-server -g
+  892 wuseman   1448 S    init
+  893 wuseman   7884 S    {exe} /bin/udapi-bridge -w -g -k -p 61780
+ 4950 wuseman   4500 S    /bin/infctld -m -c
+ 4951 wuseman   1432 S    /bin/syslogd -n -S
+ 4952 wuseman    888 S    /usr/bin/iwevent -s
+ 4953 wuseman   1444 S    /sbin/udhcpc -f -i br0 -s /etc/udhcpc/udhcpc -p /var/run/udhcpc.br0.pid -h NanoStation M5
+ 4954 wuseman   1100 S    /bin/dropbear -F -r /etc/persistent/dropbear_dss_host_key -r /etc/persistent/dropbear_rsa_host_key -p 22
+ 4959 wuseman   4204 S    /bin/lighttpd -D -f /etc/lighttpd.conf
+ 5078 wuseman   1164 S    /bin/dropbear -F -r /etc/persistent/dropbear_dss_host_key -r /etc/persistent/dropbear_rsa_host_key -p 22
+ 5079 wuseman   1452 S    -sh
+ 5107 wuseman   1436 R    ps
+XW.v6.3.5# ps
+  PID USER       VSZ STAT COMMAND
+    1 wuseman   1448 S    init
+    2 wuseman      0 SW   [kthreadd]
+    3 wuseman      0 SW   [ksoftirqd/0]
+    4 wuseman      0 SW   [events/0]
+    5 wuseman      0 SW   [khelper]
+    8 wuseman      0 SW   [async/mgr]
+   42 wuseman      0 SW   [sync_supers]
+   44 wuseman      0 SW   [bdi-default]
+   46 wuseman      0 SW   [kblockd/0]
+   66 wuseman      0 SW   [kswapd0]
+   67 wuseman      0 SW   [aio/0]
+   68 wuseman      0 SW   [crypto/0]
+  150 wuseman      0 SW   [mtdblockd]
+  255 wuseman   1440 S    /bin/watchdog -t 1 /dev/watchdog
+  396 wuseman    736 S    /sbin/hotplug2 --persistent --set-rules-file /usr/etc/hotplug2.rules
+  882 wuseman   3592 S    /bin/udapi-bridge -w -g -k -p 61780
+  891 wuseman   1940 S    /bin/udapi-server -g
+  892 wuseman   1448 S    init
+  893 wuseman   7884 S    {exe} /bin/udapi-bridge -w -g -k -p 61780
+ 4950 wuseman   4500 S    /bin/infctld -m -c
+ 4951 wuseman   1432 S    /bin/syslogd -n -S
+ 4952 wuseman    888 S    /usr/bin/iwevent -s
+ 4953 wuseman   1444 S    /sbin/udhcpc -f -i br0 -s /etc/udhcpc/udhcpc -p /var/run/udhcpc.br0.pid -h NanoStation M5
+ 4954 wuseman   1100 S    /bin/dropbear -F -r /etc/persistent/dropbear_dss_host_key -r /etc/persistent/dropbear_rsa_host_key -p 22
+ 4959 wuseman   4204 S    /bin/lighttpd -D -f /etc/lighttpd.conf
+ 5078 wuseman   1164 S    /bin/dropbear -F -r /etc/persistent/dropbear_dss_host_key -r /etc/persistent/dropbear_rsa_host_key -p 22
+ 5079 wuseman   1452 S    -sh
+ 5108 wuseman   1436 R    ps
+XW.v6.3.5# ps
+  PID USER       VSZ STAT COMMAND
+    1 wuseman   1448 S    init
+    2 wuseman      0 SW   [kthreadd]
+    3 wuseman      0 SW   [ksoftirqd/0]
+    4 wuseman      0 SW   [events/0]
+    5 wuseman      0 SW   [khelper]
+    8 wuseman      0 SW   [async/mgr]
+   42 wuseman      0 SW   [sync_supers]
+   44 wuseman      0 SW   [bdi-default]
+   46 wuseman      0 SW   [kblockd/0]
+   66 wuseman      0 SW   [kswapd0]
+   67 wuseman      0 SW   [aio/0]
+   68 wuseman      0 SW   [crypto/0]
+  150 wuseman      0 SW   [mtdblockd]
+  255 wuseman   1440 S    /bin/watchdog -t 1 /dev/watchdog
+  396 wuseman    736 S    /sbin/hotplug2 --persistent --set-rules-file /usr/etc/hotplug2.rules
+  882 wuseman   3592 S    /bin/udapi-bridge -w -g -k -p 61780
+  891 wuseman   1940 S    /bin/udapi-server -g
+  892 wuseman   1448 S    init
+  893 wuseman   7884 S    {exe} /bin/udapi-bridge -w -g -k -p 61780
+ 4950 wuseman   4500 S    /bin/infctld -m -c
+ 4951 wuseman   1432 S    /bin/syslogd -n -S
+ 4952 wuseman    888 S    /usr/bin/iwevent -s
+ 4953 wuseman   1444 S    /sbin/udhcpc -f -i br0 -s /etc/udhcpc/udhcpc -p /var/run/udhcpc.br0.pid -h NanoStation M5
+ 4954 wuseman   1100 S    /bin/dropbear -F -r /etc/persistent/dropbear_dss_host_key -r /etc/persistent/dropbear_rsa_host_key -p 22
+ 4959 wuseman   4204 S    /bin/lighttpd -D -f /etc/lighttpd.conf
+ 5078 wuseman   1164 S    /bin/dropbear -F -r /etc/persistent/dropbear_dss_host_key -r /etc/persistent/dropbear_rsa_host_key -p 22
+ 5079 wuseman   1452 S    -sh
+ 5109 wuseman   1436 R    ps
+XW.v6.3.5# ps
+  PID USER       VSZ STAT COMMAND
+    1 wuseman   1448 S    init
+    2 wuseman      0 SW   [kthreadd]
+    3 wuseman      0 SW   [ksoftirqd/0]
+    4 wuseman      0 SW   [events/0]
+    5 wuseman      0 SW   [khelper]
+    8 wuseman      0 SW   [async/mgr]
+   42 wuseman      0 SW   [sync_supers]
+   44 wuseman      0 SW   [bdi-default]
+   46 wuseman      0 SW   [kblockd/0]
+   66 wuseman      0 SW   [kswapd0]
+   67 wuseman      0 SW   [aio/0]
+   68 wuseman      0 SW   [crypto/0]
+  150 wuseman      0 SW   [mtdblockd]
+  255 wuseman   1440 S    /bin/watchdog -t 1 /dev/watchdog
+  396 wuseman    736 S    /sbin/hotplug2 --persistent --set-rules-file /usr/etc/hotplug2.rules
+  882 wuseman   3592 S    /bin/udapi-bridge -w -g -k -p 61780
+  891 wuseman   1940 S    /bin/udapi-server -g
+  892 wuseman   1448 S    init
+  893 wuseman   7884 S    {exe} /bin/udapi-bridge -w -g -k -p 61780
+ 4950 wuseman   4500 S    /bin/infctld -m -c
+ 4951 wuseman   1432 S    /bin/syslogd -n -S
+ 4952 wuseman    888 S    /usr/bin/iwevent -s
+ 4953 wuseman   1444 S    /sbin/udhcpc -f -i br0 -s /etc/udhcpc/udhcpc -p /var/run/udhcpc.br0.pid -h NanoStation M5
+ 4954 wuseman   1100 S    /bin/dropbear -F -r /etc/persistent/dropbear_dss_host_key -r /etc/persistent/dropbear_rsa_host_key -p 22
+ 4959 wuseman   4204 S    /bin/lighttpd -D -f /etc/lighttpd.conf
+ 5078 wuseman   1164 S    /bin/dropbear -F -r /etc/persistent/dropbear_dss_host_key -r /etc/persistent/dropbear_rsa_host_key -p 22
+ 5079 wuseman   1452 S    -sh
+ 5110 wuseman   1436 R    ps
+XW.v6.3.5# ps
+  PID USER       VSZ STAT COMMAND
+    1 wuseman   1448 S    init
+    2 wuseman      0 SW   [kthreadd]
+    3 wuseman      0 SW   [ksoftirqd/0]
+    4 wuseman      0 SW   [events/0]
+    5 wuseman      0 SW   [khelper]
+    8 wuseman      0 SW   [async/mgr]
+   42 wuseman      0 SW   [sync_supers]
+   44 wuseman      0 SW   [bdi-default]
+   46 wuseman      0 SW   [kblockd/0]
+   66 wuseman      0 SW   [kswapd0]
+   67 wuseman      0 SW   [aio/0]
+   68 wuseman      0 SW   [crypto/0]
+  150 wuseman      0 SW   [mtdblockd]
+  255 wuseman   1440 S    /bin/watchdog -t 1 /dev/watchdog
+  396 wuseman    736 S    /sbin/hotplug2 --persistent --set-rules-file /usr/etc/hotplug2.rules
+  882 wuseman   3592 S    /bin/udapi-bridge -w -g -k -p 61780
+  891 wuseman   1940 S    /bin/udapi-server -g
+  892 wuseman   1448 S    init
+  893 wuseman   7884 S    {exe} /bin/udapi-bridge -w -g -k -p 61780
+ 4950 wuseman   4500 S    /bin/infctld -m -c
+ 4951 wuseman   1432 S    /bin/syslogd -n -S
+ 4952 wuseman    888 S    /usr/bin/iwevent -s
+ 4953 wuseman   1444 S    /sbin/udhcpc -f -i br0 -s /etc/udhcpc/udhcpc -p /var/run/udhcpc.br0.pid -h NanoStation M5
+ 4954 wuseman   1100 S    /bin/dropbear -F -r /etc/persistent/dropbear_dss_host_key -r /etc/persistent/dropbear_rsa_host_key -p 22
+ 4959 wuseman   4204 S    /bin/lighttpd -D -f /etc/lighttpd.conf
+ 5078 wuseman   1164 S    /bin/dropbear -F -r /etc/persistent/dropbear_dss_host_key -r /etc/persistent/dropbear_rsa_host_key -p 22
+ 5079 wuseman   1452 S    -sh
+ 5111 wuseman   1436 R    ps
+XW.v6.3.5# ps
+  PID USER       VSZ STAT COMMAND
+    1 wuseman   1448 S    init
+    2 wuseman      0 SW   [kthreadd]
+    3 wuseman      0 SW   [ksoftirqd/0]
+    4 wuseman      0 SW   [events/0]
+    5 wuseman      0 SW   [khelper]
+    8 wuseman      0 SW   [async/mgr]
+   42 wuseman      0 SW   [sync_supers]
+   44 wuseman      0 SW   [bdi-default]
+   46 wuseman      0 SW   [kblockd/0]
+   66 wuseman      0 SW   [kswapd0]
+   67 wuseman      0 SW   [aio/0]
+   68 wuseman      0 SW   [crypto/0]
+  150 wuseman      0 SW   [mtdblockd]
+  255 wuseman   1440 S    /bin/watchdog -t 1 /dev/watchdog
+  396 wuseman    736 S    /sbin/hotplug2 --persistent --set-rules-file /usr/etc/hotplug2.rules
+  882 wuseman   3592 S    /bin/udapi-bridge -w -g -k -p 61780
+  891 wuseman   1940 S    /bin/udapi-server -g
+  892 wuseman   1448 S    init
+  893 wuseman   7884 S    {exe} /bin/udapi-bridge -w -g -k -p 61780
+ 4950 wuseman   4500 S    /bin/infctld -m -c
+ 4951 wuseman   1432 S    /bin/syslogd -n -S
+ 4952 wuseman    888 S    /usr/bin/iwevent -s
+ 4953 wuseman   1444 S    /sbin/udhcpc -f -i br0 -s /etc/udhcpc/udhcpc -p /var/run/udhcpc.br0.pid -h NanoStation M5
+ 4954 wuseman   1100 S    /bin/dropbear -F -r /etc/persistent/dropbear_dss_host_key -r /etc/persistent/dropbear_rsa_host_key -p 22
+ 4959 wuseman   4204 S    /bin/lighttpd -D -f /etc/lighttpd.conf
+ 5078 wuseman   1164 S    /bin/dropbear -F -r /etc/persistent/dropbear_dss_host_key -r /etc/persistent/dropbear_rsa_host_key -p 22
+ 5079 wuseman   1452 S    -sh
+ 5112 wuseman   1436 R    ps
+XW.v6.3.5# ps
+  PID USER       VSZ STAT COMMAND
+    1 wuseman   1448 S    init
+    2 wuseman      0 SW   [kthreadd]
+    3 wuseman      0 SW   [ksoftirqd/0]
+    4 wuseman      0 SW   [events/0]
+    5 wuseman      0 SW   [khelper]
+    8 wuseman      0 SW   [async/mgr]
+   42 wuseman      0 SW   [sync_supers]
+   44 wuseman      0 SW   [bdi-default]
+   46 wuseman      0 SW   [kblockd/0]
+   66 wuseman      0 SW   [kswapd0]
+   67 wuseman      0 SW   [aio/0]
+   68 wuseman      0 SW   [crypto/0]
+  150 wuseman      0 SW   [mtdblockd]
+  255 wuseman   1440 S    /bin/watchdog -t 1 /dev/watchdog
+  396 wuseman    736 S    /sbin/hotplug2 --persistent --set-rules-file /usr/etc/hotplug2.rules
+  882 wuseman   3592 S    /bin/udapi-bridge -w -g -k -p 61780
+  891 wuseman   1940 S    /bin/udapi-server -g
+  892 wuseman   1448 S    init
+  893 wuseman   7884 S    {exe} /bin/udapi-bridge -w -g -k -p 61780
+ 4950 wuseman   4500 S    /bin/infctld -m -c
+ 4951 wuseman   1432 S    /bin/syslogd -n -S
+ 4952 wuseman    888 S    /usr/bin/iwevent -s
+ 4953 wuseman   1444 S    /sbin/udhcpc -f -i br0 -s /etc/udhcpc/udhcpc -p /var/run/udhcpc.br0.pid -h NanoStation M5
+ 4954 wuseman   1100 S    /bin/dropbear -F -r /etc/persistent/dropbear_dss_host_key -r /etc/persistent/dropbear_rsa_host_key -p 22
+ 4959 wuseman   4204 S    /bin/lighttpd -D -f /etc/lighttpd.conf
+ 5078 wuseman   1164 S    /bin/dropbear -F -r /etc/persistent/dropbear_dss_host_key -r /etc/persistent/dropbear_rsa_host_key -p 22
+ 5079 wuseman   1452 S    -sh
+ 5114 wuseman   1296 S    /bin/cgi /usr/www/apply.cgi
+ 5115 wuseman      0 Z    [cgi]
+ 5116 wuseman      0 Z    [cgi]
+ 5117 wuseman      0 Z    [glogo.cgi]
+ 5118 wuseman      0 Z    [unms_status.cgi]
+ 5119 wuseman   1436 R    ps
+XW.v6.3.5# ps
+  PID USER       VSZ STAT COMMAND
+    1 wuseman   1448 S    init
+    2 wuseman      0 SW   [kthreadd]
+    3 wuseman      0 SW   [ksoftirqd/0]
+    4 wuseman      0 SW   [events/0]
+    5 wuseman      0 SW   [khelper]
+    8 wuseman      0 SW   [async/mgr]
+   42 wuseman      0 SW   [sync_supers]
+   44 wuseman      0 SW   [bdi-default]
+   46 wuseman      0 SW   [kblockd/0]
+   66 wuseman      0 SW   [kswapd0]
+   67 wuseman      0 SW   [aio/0]
+   68 wuseman      0 SW   [crypto/0]
+  150 wuseman      0 SW   [mtdblockd]
+  255 wuseman   1440 S    /bin/watchdog -t 1 /dev/watchdog
+  396 wuseman    736 S    /sbin/hotplug2 --persistent --set-rules-file /usr/etc/hotplug2.rules
+  882 wuseman   3592 S    /bin/udapi-bridge -w -g -k -p 61780
+  891 wuseman   1940 S    /bin/udapi-server -g
+  892 wuseman   1448 S    init
+  893 wuseman   7884 S    {exe} /bin/udapi-bridge -w -g -k -p 61780
+ 4950 wuseman   4500 S    /bin/infctld -m -c
+ 4951 wuseman   1432 S    /bin/syslogd -n -S
+ 4952 wuseman    888 S    /usr/bin/iwevent -s
+ 4953 wuseman   1444 S    /sbin/udhcpc -f -i br0 -s /etc/udhcpc/udhcpc -p /var/run/udhcpc.br0.pid -h NanoStation M5
+ 4954 wuseman   1100 S    /bin/dropbear -F -r /etc/persistent/dropbear_dss_host_key -r /etc/persistent/dropbear_rsa_host_key -p 22
+ 4959 wuseman   4204 S    /bin/lighttpd -D -f /etc/lighttpd.conf
+ 5078 wuseman   1164 S    /bin/dropbear -F -r /etc/persistent/dropbear_dss_host_key -r /etc/persistent/dropbear_rsa_host_key -p 22
+ 5079 wuseman   1452 S    -sh
+ 5114 wuseman   1440 S    /bin/sh -c /usr/etc/rc.d/rc.softrestart save
+ 5120 wuseman   1452 S    {rc.softrestart} /bin/sh /usr/etc/rc.d/rc.softrestart save
+ 5129 wuseman   1264 R    /sbin/ubntconf -p /tmp/running.cfg
+ 5130 wuseman   1436 R    ps
+XW.v6.3.5# ps
+  PID USER       VSZ STAT COMMAND
+    1 wuseman   1448 S    init
+    2 wuseman      0 SW   [kthreadd]
+    3 wuseman      0 SW   [ksoftirqd/0]
+    4 wuseman      0 SW   [events/0]
+    5 wuseman      0 SW   [khelper]
+    8 wuseman      0 SW   [async/mgr]
+   42 wuseman      0 SW   [sync_supers]
+   44 wuseman      0 SW   [bdi-default]
+   46 wuseman      0 SW   [kblockd/0]
+   66 wuseman      0 SW   [kswapd0]
+   67 wuseman      0 SW   [aio/0]
+   68 wuseman      0 SW   [crypto/0]
+  150 wuseman      0 SW   [mtdblockd]
+  255 wuseman   1440 T    /bin/watchdog -t 1 /dev/watchdog
+  396 wuseman    736 S    /sbin/hotplug2 --persistent --set-rules-file /usr/etc/hotplug2.rules
+  882 wuseman   3592 S    /bin/udapi-bridge -w -g -k -p 61780
+  891 wuseman   1940 S    /bin/udapi-server -g
+  892 wuseman   1448 S    init
+  893 wuseman   7888 S    {exe} /bin/udapi-bridge -w -g -k -p 61780
+ 4950 wuseman   4500 R    /bin/infctld -m -c
+ 4951 wuseman   1432 S    /bin/syslogd -n -S
+ 4952 wuseman    888 S    /usr/bin/iwevent -s
+ 4953 wuseman   1444 S    /sbin/udhcpc -f -i br0 -s /etc/udhcpc/udhcpc -p /var/run/udhcpc.br0.pid -h NanoStation M5
+ 4954 wuseman   1100 S    /bin/dropbear -F -r /etc/persistent/dropbear_dss_host_key -r /etc/persistent/dropbear_rsa_host_key -p 22
+ 4959 wuseman   4204 S    /bin/lighttpd -D -f /etc/lighttpd.conf
+ 5078 wuseman   1164 S    /bin/dropbear -F -r /etc/persistent/dropbear_dss_host_key -r /etc/persistent/dropbear_rsa_host_key -p 22
+ 5079 wuseman   1452 S    -sh
+ 5114 wuseman   1440 S    /bin/sh -c /usr/etc/rc.d/rc.softrestart save
+ 5120 wuseman   1452 S    {rc.softrestart} /bin/sh /usr/etc/rc.d/rc.softrestart save
+ 5142 wuseman   1428 R    {airview} /bin/sh /sbin/airview softrestart_stop
+ 5143 wuseman   1436 R    ps
+
+  PID USER       VSZ STAT COMMAND
+    1 wuseman   1448 S    init
+    2 wuseman      0 SW   [kthreadd]
+    3 wuseman      0 SW   [ksoftirqd/0]
+    4 wuseman      0 SW   [events/0]
+    5 wuseman      0 SW   [khelper]
+    8 wuseman      0 SW   [async/mgr]
+   42 wuseman      0 SW   [sync_supers]
+   44 wuseman      0 SW   [bdi-default]
+   46 wuseman      0 SW   [kblockd/0]
+   66 wuseman      0 SW   [kswapd0]
+   67 wuseman      0 SW   [aio/0]
+   68 wuseman      0 SW   [crypto/0]
+  150 wuseman      0 SW   [mtdblockd]
+  255 wuseman   1440 S    /bin/watchdog -t 1 /dev/watchdog
+  396 wuseman    736 S    /sbin/hotplug2 --persistent --set-rules-file /usr/etc/hotplug2.rules
+  882 wuseman   3592 S    /bin/udapi-bridge -w -g -k -p 61780
+  891 wuseman   1940 S    /bin/udapi-server -g
+  892 wuseman   1448 S    init
+  893 wuseman   8144 S    {exe} /bin/udapi-bridge -w -g -k -p 61780
+ 5518 wuseman      0 Z    [infctld]
+ 5521 wuseman   1444 S    /sbin/udhcpc -f -i br0 -s /etc/udhcpc/udhcpc -p /var/run/udhcpc.br0.pid -h NanoStation M5
+ 5522 wuseman   1100 S    /bin/dropbear -F -r /etc/persistent/dropbear_dss_host_key -r /etc/persistent/dropbear_rsa_host_key -p 22
+ 5528 wuseman   4232 S    /bin/lighttpd -D -f /etc/lighttpd.conf
+ 5529 wuseman   4376 S    /bin/ulogger
+ 5681 wuseman   1164 S    /bin/dropbear -F -r /etc/persistent/dropbear_dss_host_key -r /etc/persistent/dropbear_rsa_host_key -p 22
+ 5683 wuseman   1456 S    -sh
+ 6471 wuseman      0 Z    [sh]
+ 6691 wuseman      0 Z    [sh]
+ 7766 wuseman      0 Z    [sh]
+ 9848 wuseman   1432 S    /bin/syslogd -n -S -L -R 81.234.120.192:514
+ 9849 wuseman    888 S    /usr/bin/iwevent -s
+10070 wuseman   1164 S    /bin/dropbear -F -r /etc/persistent/dropbear_dss_host_key -r /etc/persistent/dropbear_rsa_host_key -p 22
+10072 wuseman   1476 S    -sh
+10386 wuseman   1164 S    /bin/dropbear -F -r /etc/persistent/dropbear_dss_host_key -r /etc/persistent/dropbear_rsa_host_key -p 22
+10394 wuseman   1444 S    -sh
+10417 wuseman   1432 S    /bin/syslogd
+10443 wuseman   1432 S    /bin/syslogd -L
+10457 wuseman   1432 S    /bin/syslogd -S
+11480 wuseman   1440 S    /bin/sh -c /usr/etc/rc.d/rc.softrestart save
+11490 wuseman   1452 S    {rc.softrestart} /bin/sh /usr/etc/rc.d/rc.softrestart save
+11506 wuseman   1436 S    /bin/sh /tmp/diff.sh
+11523 wuseman   1448 S    {plugin} /bin/sh /usr/etc/init.d/plugin stop iptables
+11525 wuseman   1436 R    ps
+
+
+
+-rw-r--r--    1 wuseman  admin            6 Jul 16 13:52 .wifi_ath0
+srwxr-xr-x    1 wuseman  admin            0 Jul 16 13:52 udapi-bridge-stream.sock.893
+-rw-rw-rw-    1 wuseman  admin        16384 Jul 16 14:27 .tickets.tdb
+-rw-r--r--    1 wuseman  admin         3078 Jul 16 14:27 system.cfg
+-rw-r--r--    1 wuseman  admin          455 Jul 16 14:27 ubntconf.log
+-rw-r--r--    1 wuseman  admin         3078 Jul 16 14:27 running.cfg
+-rw-------    1 wuseman  admin           42 Jul 16 14:27 diff.sh
+drwxr-xr-x    5 wuseman  admin          280 Jul 16 14:27 .
+drwxr-xr-x    2 wuseman  admin           80 Jul 16 14:31 stats
+XW.v6.3.5# cat
+XW.v6.3.5# ls -ltra /tmp/
+XW.v6.3.5# ps
+  PID USER       VSZ STAT COMMAND
+    1 wuseman   1448 S    init
+    2 wuseman      0 SW   [kthreadd]
+    3 wuseman      0 SW   [ksoftirqd/0]
+    4 wuseman      0 SW   [events/0]
+    5 wuseman      0 SW   [khelper]
+    8 wuseman      0 SW   [async/mgr]
+   42 wuseman      0 SW   [sync_supers]
+   44 wuseman      0 SW   [bdi-default]
+   46 wuseman      0 SW   [kblockd/0]
+   66 wuseman      0 SW   [kswapd0]
+   67 wuseman      0 SW   [aio/0]
+   68 wuseman      0 SW   [crypto/0]
+  150 wuseman      0 SW   [mtdblockd]
+  255 wuseman   1440 S    /bin/watchdog -t 1 /dev/watchdog
+  396 wuseman    736 S    /sbin/hotplug2 --persistent --set-rules-file /usr/etc/hotplug2.rules
+  882 wuseman   3592 S    /bin/udapi-bridge -w -g -k -p 61780
+  891 wuseman   1940 S    /bin/udapi-server -g
+  892 wuseman   1448 S    init
+  893 wuseman   8144 S    {exe} /bin/udapi-bridge -w -g -k -p 61780
+ 5518 wuseman      0 Z    [infctld]
+ 5521 wuseman   1444 S    /sbin/udhcpc -f -i br0 -s /etc/udhcpc/udhcpc -p /var/run/udhcpc.br0.pid -h NanoStation M5
+ 5522 wuseman   1100 S    /bin/dropbear -F -r /etc/persistent/dropbear_dss_host_key -r /etc/persistent/dropbear_rsa_host_key -p 22
+ 5528 wuseman   4232 S    /bin/lighttpd -D -f /etc/lighttpd.conf
+ 5529 wuseman   4376 S    /bin/ulogger
+ 5681 wuseman   1164 S    /bin/dropbear -F -r /etc/persistent/dropbear_dss_host_key -r /etc/persistent/dropbear_rsa_host_key -p 22
+ 5683 wuseman   1456 S    -sh
+ 6471 wuseman      0 Z    [sh]
+ 6691 wuseman      0 Z    [sh]
+ 7766 wuseman      0 Z    [sh]
+ 9848 wuseman   1432 S    /bin/syslogd -n -S -L -R 81.234.120.192:514
+ 9849 wuseman    888 S    /usr/bin/iwevent -s
+10070 wuseman   1164 S    /bin/dropbear -F -r /etc/persistent/dropbear_dss_host_key -r /etc/persistent/dropbear_rsa_host_key -p 22
+10072 wuseman   1476 S    -sh
+10386 wuseman   1164 S    /bin/dropbear -F -r /etc/persistent/dropbear_dss_host_key -r /etc/persistent/dropbear_rsa_host_key -p 22
+10394 wuseman   1444 S    -sh
+10417 wuseman   1432 S    /bin/syslogd
+10443 wuseman   1432 S    /bin/syslogd -L
+10457 wuseman   1432 S    /bin/syslogd -S
+11480 wuseman   1440 S    /bin/sh -c /usr/etc/rc.d/rc.softrestart save
+11490 wuseman   1452 S    {rc.softrestart} /bin/sh /usr/etc/rc.d/rc.softrestart save
+11506 wuseman   1436 S    /bin/sh /tmp/diff.sh
+11523 wuseman   1448 S    {plugin} /bin/sh /usr/etc/init.d/plugin stop iptables
+11525 wuseman   1436 R    ps
+XW.v6.3.5# ps
+  PID USER       VSZ STAT COMMAND
+    1 wuseman   1448 S    init
+    2 wuseman      0 SW   [kthreadd]
+    3 wuseman      0 SW   [ksoftirqd/0]
+    4 wuseman      0 SW   [events/0]
+    5 wuseman      0 SW   [khelper]
+    8 wuseman      0 SW   [async/mgr]
+   42 wuseman      0 SW   [sync_supers]
+   44 wuseman      0 SW   [bdi-default]
+   46 wuseman      0 SW   [kblockd/0]
+   66 wuseman      0 SW   [kswapd0]
+   67 wuseman      0 SW   [aio/0]
+   68 wuseman      0 SW   [crypto/0]
+  150 wuseman      0 SW   [mtdblockd]
+  255 wuseman   1440 S    /bin/watchdog -t 1 /dev/watchdog
+  396 wuseman    736 S    /sbin/hotplug2 --persistent --set-rules-file /usr/etc/hotplug2.rules
+  882 wuseman   3592 S    /bin/udapi-bridge -w -g -k -p 61780
+  891 wuseman   1940 S    /bin/udapi-server -g
+  892 wuseman   1448 S    init
+  893 wuseman   8144 S    {exe} /bin/udapi-bridge -w -g -k -p 61780
+ 5521 wuseman   1444 S    /sbin/udhcpc -f -i br0 -s /etc/udhcpc/udhcpc -p /var/run/udhcpc.br0.pid -h NanoStation M5
+ 5522 wuseman   1100 S    /bin/dropbear -F -r /etc/persistent/dropbear_dss_host_key -r /etc/persistent/dropbear_rsa_host_key -p 22
+ 5528 wuseman   4232 S    /bin/lighttpd -D -f /etc/lighttpd.conf
+ 5529 wuseman   4376 S    /bin/ulogger
+ 5681 wuseman   1164 S    /bin/dropbear -F -r /etc/persistent/dropbear_dss_host_key -r /etc/persistent/dropbear_rsa_host_key -p 22
+ 5683 wuseman   1456 S    -sh
+ 6471 wuseman      0 Z    [sh]
+ 6691 wuseman      0 Z    [sh]
+ 7766 wuseman      0 Z    [sh]
+ 9848 wuseman   1432 S    /bin/syslogd -n -S -L -R 81.234.120.192:514
+ 9849 wuseman    888 S    /usr/bin/iwevent -s
+10070 wuseman   1164 S    /bin/dropbear -F -r /etc/persistent/dropbear_dss_host_key -r /etc/persistent/dropbear_rsa_host_key -p 22
+10072 wuseman   1476 S    -sh
+10386 wuseman   1164 S    /bin/dropbear -F -r /etc/persistent/dropbear_dss_host_key -r /etc/persistent/dropbear_rsa_host_key -p 22
+10394 wuseman   1444 S    -sh
+10417 wuseman   1432 S    /bin/syslogd
+10443 wuseman   1432 S    /bin/syslogd -L
+10457 wuseman   1432 S    /bin/syslogd -S
+11601 wuseman   4500 S    /bin/infctld -m -c
+11704 wuseman   1436 R    ps
+XW.v6.3.5# ps
+  PID USER       VSZ STAT COMMAND
+    1 wuseman   1448 S    init
+    2 wuseman      0 SW   [kthreadd]
+    3 wuseman      0 SW   [ksoftirqd/0]
+    4 wuseman      0 SW   [events/0]
+    5 wuseman      0 SW   [khelper]
+    8 wuseman      0 SW   [async/mgr]
+   42 wuseman      0 SW   [sync_supers]
+   44 wuseman      0 SW   [bdi-default]
+   46 wuseman      0 SW   [kblockd/0]
+   66 wuseman      0 SW   [kswapd0]
+   67 wuseman      0 SW   [aio/0]
+   68 wuseman      0 SW   [crypto/0]
+  150 wuseman      0 SW   [mtdblockd]
+  255 wuseman   1440 S    /bin/watchdog -t 1 /dev/watchdog
+  396 wuseman    736 S    /sbin/hotplug2 --persistent --set-rules-file /usr/etc/hotplug2.rules
+  882 wuseman   3592 S    /bin/udapi-bridge -w -g -k -p 61780
+  891 wuseman   1940 S    /bin/udapi-server -g
+  892 wuseman   1448 S    init
+  893 wuseman   8144 S    {exe} /bin/udapi-bridge -w -g -k -p 61780
+ 5521 wuseman   1444 S    /sbin/udhcpc -f -i br0 -s /etc/udhcpc/udhcpc -p /var/run/udhcpc.br0.pid -h NanoStation M5
+ 5522 wuseman   1100 S    /bin/dropbear -F -r /etc/persistent/dropbear_dss_host_key -r /etc/persistent/dropbear_rsa_host_key -p 22
+ 5528 wuseman   4232 S    /bin/lighttpd -D -f /etc/lighttpd.conf
+ 5529 wuseman   4376 S    /bin/ulogger
+ 5681 wuseman   1164 S    /bin/dropbear -F -r /etc/persistent/dropbear_dss_host_key -r /etc/persistent/dropbear_rsa_host_key -p 22
+ 5683 wuseman   1456 S    -sh
+ 6471 wuseman      0 Z    [sh]
+ 6691 wuseman      0 Z    [sh]
+ 7766 wuseman      0 Z    [sh]
+ 9848 wuseman   1432 S    /bin/syslogd -n -S -L -R 81.234.120.192:514
+ 9849 wuseman    888 S    /usr/bin/iwevent -s
+10070 wuseman   1164 S    /bin/dropbear -F -r /etc/persistent/dropbear_dss_host_key -r /etc/persistent/dropbear_rsa_host_key -p 22
+10072 wuseman   1476 S    -sh
+10386 wuseman   1164 S    /bin/dropbear -F -r /etc/persistent/dropbear_dss_host_key -r /etc/persistent/dropbear_rsa_host_key -p 22
+10394 wuseman   1444 S    -sh
+10417 wuseman   1432 S    /bin/syslogd
+10443 wuseman   1432 S    /bin/syslogd -L
+10457 wuseman   1432 S    /bin/syslogd -S
+11601 wuseman   4500 S    /bin/infctld -m -c
+11705 wuseman      0 Z    [unms_status.cgi]
+11706 wuseman   1436 R    ps
+XW.v6.3.5# ps
+  PID USER       VSZ STAT COMMAND
+    1 wuseman   1448 S    init
+    2 wuseman      0 SW   [kthreadd]
+    3 wuseman      0 SW   [ksoftirqd/0]
+    4 wuseman      0 SW   [events/0]
+    5 wuseman      0 SW   [khelper]
+    8 wuseman      0 SW   [async/mgr]
+   42 wuseman      0 SW   [sync_supers]
+   44 wuseman      0 SW   [bdi-default]
+   46 wuseman      0 SW   [kblockd/0]
+   66 wuseman      0 SW   [kswapd0]
+   67 wuseman      0 SW   [aio/0]
+   68 wuseman      0 SW   [crypto/0]
+  150 wuseman      0 SW   [mtdblockd]
+  255 wuseman   1440 S    /bin/watchdog -t 1 /dev/watchdog
+  396 wuseman    736 S    /sbin/hotplug2 --persistent --set-rules-file /usr/etc/hotplug2.rules
+  882 wuseman   3592 S    /bin/udapi-bridge -w -g -k -p 61780
+  891 wuseman   1940 S    /bin/udapi-server -g
+  892 wuseman   1448 S    init
+  893 wuseman   8144 S    {exe} /bin/udapi-bridge -w -g -k -p 61780
+ 5521 wuseman   1444 S    /sbin/udhcpc -f -i br0 -s /etc/udhcpc/udhcpc -p /var/run/udhcpc.br0.pid -h NanoStation M5
+ 5522 wuseman   1100 S    /bin/dropbear -F -r /etc/persistent/dropbear_dss_host_key -r /etc/persistent/dropbear_rsa_host_key -p 22
+ 5528 wuseman   4232 S    /bin/lighttpd -D -f /etc/lighttpd.conf
+ 5529 wuseman   4376 S    /bin/ulogger
+ 5681 wuseman   1164 S    /bin/dropbear -F -r /etc/persistent/dropbear_dss_host_key -r /etc/persistent/dropbear_rsa_host_key -p 22
+ 5683 wuseman   1456 S    -sh
+ 6471 wuseman      0 Z    [sh]
+ 6691 wuseman      0 Z    [sh]
+ 7766 wuseman      0 Z    [sh]
+ 9848 wuseman   1432 S    /bin/syslogd -n -S -L -R 81.234.120.192:514
+ 9849 wuseman    888 S    /usr/bin/iwevent -s
+10070 wuseman   1164 S    /bin/dropbear -F -r /etc/persistent/dropbear_dss_host_key -r /etc/persistent/dropbear_rsa_host_key -p 22
+10072 wuseman   1476 S    -sh
+10386 wuseman   1164 S    /bin/dropbear -F -r /etc/persistent/dropbear_dss_host_key -r /etc/persistent/dropbear_rsa_host_key -p 22
+10394 wuseman   1444 S    -sh
+10417 wuseman   1432 S    /bin/syslogd
+10443 wuseman   1432 S    /bin/syslogd -L
+10457 wuseman   1432 S    /bin/syslogd -S
+11601 wuseman   4500 S    /bin/infctld -m -c
+11705 wuseman      0 Z    [unms_status.cgi]
+11707 wuseman   1432 S    sh -c /usr/www/status.cgi
+11708 wuseman   1436 S    sh -c echo "getInterfaceList"; /usr/www/iflist.cgi 2>/dev/null | sed '1,/^[[:space:]]*$/d' | tr -d "\n\r\t"
+11709 wuseman   2700 R    [status.cgi]
+11710 wuseman   4384 R    /usr/www/iflist.cgi
+11711 wuseman   1432 S    sed 1,/^[[:space:]]*$/d
+11712 wuseman   1440 S    tr -d \n\r\t
+11713 wuseman   1436 R    ps
+XW.v6.3.5# ps
+  PID USER       VSZ STAT COMMAND
+    1 wuseman   1448 S    init
+    2 wuseman      0 SW   [kthreadd]
+    3 wuseman      0 SW   [ksoftirqd/0]
+    4 wuseman      0 SW   [events/0]
+    5 wuseman      0 SW   [khelper]
+    8 wuseman      0 SW   [async/mgr]
+   42 wuseman      0 SW   [sync_supers]
+   44 wuseman      0 SW   [bdi-default]
+   46 wuseman      0 SW   [kblockd/0]
+   66 wuseman      0 SW   [kswapd0]
+   67 wuseman      0 SW   [aio/0]
+   68 wuseman      0 SW   [crypto/0]
+  150 wuseman      0 SW   [mtdblockd]
+  255 wuseman   1440 S    /bin/watchdog -t 1 /dev/watchdog
+  396 wuseman    736 S    /sbin/hotplug2 --persistent --set-rules-file /usr/etc/hotplug2.rules
+  882 wuseman   3592 S    /bin/udapi-bridge -w -g -k -p 61780
+  891 wuseman   1940 S    /bin/udapi-server -g
+  892 wuseman   1448 S    init
+  893 wuseman   8144 S    {exe} /bin/udapi-bridge -w -g -k -p 61780
+ 5521 wuseman   1444 S    /sbin/udhcpc -f -i br0 -s /etc/udhcpc/udhcpc -p /var/run/udhcpc.br0.pid -h NanoStation M5
+ 5522 wuseman   1100 S    /bin/dropbear -F -r /etc/persistent/dropbear_dss_host_key -r /etc/persistent/dropbear_rsa_host_key -p 22
+ 5528 wuseman   4232 S    /bin/lighttpd -D -f /etc/lighttpd.conf
+ 5529 wuseman   4376 S    /bin/ulogger
+ 5681 wuseman   1164 S    /bin/dropbear -F -r /etc/persistent/dropbear_dss_host_key -r /etc/persistent/dropbear_rsa_host_key -p 22
+ 5683 wuseman   1456 S    -sh
+ 6471 wuseman      0 Z    [sh]
+ 6691 wuseman      0 Z    [sh]
+ 7766 wuseman      0 Z    [sh]
+ 9848 wuseman   1432 S    /bin/syslogd -n -S -L -R 81.234.120.192:514
+ 9849 wuseman    888 S    /usr/bin/iwevent -s
+10070 wuseman   1164 S    /bin/dropbear -F -r /etc/persistent/dropbear_dss_host_key -r /etc/persistent/dropbear_rsa_host_key -p 22
+10072 wuseman   1476 S    -sh
+10386 wuseman   1164 S    /bin/dropbear -F -r /etc/persistent/dropbear_dss_host_key -r /etc/persistent/dropbear_rsa_host_key -p 22
+10394 wuseman   1444 S    -sh
+10417 wuseman   1432 S    /bin/syslogd
+10443 wuseman   1432 S    /bin/syslogd -L
+10457 wuseman   1432 S    /bin/syslogd -S
+11601 wuseman   4500 S    /bin/infctld -m -c
+11724 wuseman      0 Z    [unms_status.cgi]
+11726 wuseman   1436 R    ps
